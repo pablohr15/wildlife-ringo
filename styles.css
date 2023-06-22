@@ -11,7 +11,7 @@
         auto-fit,
         minmax(256px, 1fr)
     );
-    gap: 256px;
+    gap: 80px;
     padding: 20px;
 }
 
@@ -40,7 +40,7 @@ header{
     font-size: 40px;
     color: white;
     outline-color: black;
-    text-shadow: 3px 3px black;
+    text-shadow: 2px 2px black, 4px 4px rgb(255, 146, 250);
     opacity: 100%;
 }
 
@@ -49,4 +49,17 @@ header{
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
     text-align: center;
+}
+
+.menu{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.menu-item{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: aquamarine;
 }
