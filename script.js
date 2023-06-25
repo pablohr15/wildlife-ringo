@@ -19,7 +19,7 @@ fetch("https://sheets.googleapis.com/v4/spreadsheets/1m9hab2nw1GdqoLbvjJBe7vE8GS
             <img src="assets/${i}.jpeg"></img>
             <div class="container">
                 <h4 style="font-size:20px"><b>${character.characterName}</b></h4>
-                <p>${character.characterDescription}</p>
+                <p style="font-style:italic">${character.characterDescription}</p>
             </div>
         </div>
         `
