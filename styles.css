@@ -40,8 +40,10 @@ header{
 
 .menu{
     background-color: white;
-    display: flex;
-    justify-content: space-evenly;
+    max-width: 900px;
+    margin: auto;
+    font-size: 20px;
+    margin-top: 50px;
     
 }
 
@@ -49,4 +51,18 @@ header{
     font-size: 30px;
     font-weight: bold;
     background-color: aquamarine;
+    display: grid;
+
+}
+
+.menu-bar{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-bar > li{
+    display: block;
+    padding: 15px 20px;
+    color: black;
 }
