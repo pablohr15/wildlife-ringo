@@ -5,7 +5,10 @@ fetch("https://sheets.googleapis.com/v4/spreadsheets/1m9hab2nw1GdqoLbvjJBe7vE8GS
 
     const datos = data.values
     const rows = datos[1].length
-    const characters = document.getElementById('characters')
+    let characters = document.getElementById('characters')
+    const filters = document.querySelectorAll('.nav-link')
+    console.log(filters)
+    let charactersList = [];
 
     for (let i = 0; i < rows; i++) {
         let character = {
@@ -13,9 +16,11 @@ fetch("https://sheets.googleapis.com/v4/spreadsheets/1m9hab2nw1GdqoLbvjJBe7vE8GS
             characterName: datos[1][i],
             characterDescription: datos[2][i]
         }
+
+        charactersList.push(character);
    
         characters.innerHTML += `  
-        <div class="card">
+        <div class="character-card">
             <img src="assets/${i}.jpeg"></img>
             <div class="container">
                 <h4 style="font-size:20px"><b>${character.characterName}</b></h4>
@@ -25,6 +30,28 @@ fetch("https://sheets.googleapis.com/v4/spreadsheets/1m9hab2nw1GdqoLbvjJBe7vE8GS
         `
 
     }
+
+    filters.forEach((filter) => {
+        filter.addEventListener('click', () =>{
+            console.log(charactersList)
+            characters.innerHTML = '';
+
+            for (let i = 0; i < rows; i++) {
+                let characterFromList = charactersList[i]
+                if (characterFromList["characterDescription"].includes(filter.innerText)){
+                    characters.innerHTML += `  
+                    <div class="character-card">
+                        <img src="assets/${i}.jpeg"></img>
+                        <div class="container">
+                            <h4 style="font-size:20px"><b>${characterFromList.characterName}</b></h4>
+                            <p style="font-style:italic">${characterFromList.characterDescription}</p>
+                        </div>
+                    </div>
+                    `
+                }      
+            }
+        })
+    })
 
         
 })

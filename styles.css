@@ -31,28 +31,16 @@ header{
     opacity: 100%;
 }
 
-.card{
+.character-card{
     background-color: wheat;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
     text-align: center;
 }
 
+
 .menu{
     background-color: white;
-    max-width: 900px;
-    margin: auto;
-    font-size: 20px;
-    margin-top: 50px;
-    
-}
-
-.menu-item{
-    font-size: 30px;
-    font-weight: bold;
-    background-color: aquamarine;
-    display: grid;
-
 }
 
 .menu-bar{
