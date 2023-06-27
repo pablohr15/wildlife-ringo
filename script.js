@@ -34,9 +34,7 @@ fetch("https://sheets.googleapis.com/v4/spreadsheets/1m9hab2nw1GdqoLbvjJBe7vE8GS
     filters.forEach((filter) => {
         filter.addEventListener('click', () =>{
             
-            const menuToggle = document.getElementById('navbarNav');
-            const bsCollapse = new bootstrap.Collapse(menuToggle);
-            bsCollapse.toggle();
+            $('.navbar-collapse').collapse('hide');
 
             characters.innerHTML = '';
 

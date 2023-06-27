@@ -25,12 +25,12 @@ body {
 }
 
 
-header{
-    text-align: center;
-    font-size: 40px;
-    color: white;
-    outline-color: black;
-    text-shadow: 2px 2px black, 4px 4px rgb(255, 146, 250);
+.headname{
+    font-size: 60px!important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif!important;
+    color: rgb(255, 146, 250)!important;
+    text-shadow: 0 0 30px white!important;
+    font-weight: bold;
     opacity: 100%;
 }
 
@@ -43,21 +43,14 @@ header{
 
 
 .menu{
-    background-color: white;
+    background-color: rgb(133, 133, 133);
 }
 
-.menu-bar{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-.menu-bar > li{
-    display: block;
-    padding: 15px 20px;
-    color: black;
-}
 
 *:focus{
     outline: 0!important;
+}
+
+.nav-item:hover{
+    cursor: pointer;
 }
