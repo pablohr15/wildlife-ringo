@@ -35,7 +35,7 @@ fetch("https://sheets.googleapis.com/v4/spreadsheets/1m9hab2nw1GdqoLbvjJBe7vE8GS
         <div class="character-card">
             <img style="border-radius: 10px; width: 100%; height: auto; border: 2px solid rgb(255, 146, 250); box-shadow: 0 0 15px rgb(255, 146, 250), 0 0 30px white;" src="assets/${i}.jpeg"></img>
             <div class="container">
-                <h4 style="font-size:20px"><b>${character.characterName}</b></h4>
+                <h4 style="font-size:20px; padding-top:10px;"><b>${character.characterName}</b></h4>
                 <p style="font-style:italic">${character.characterDescription}</p>
             </div>
         </div>
@@ -69,7 +69,7 @@ fetch("https://sheets.googleapis.com/v4/spreadsheets/1m9hab2nw1GdqoLbvjJBe7vE8GS
                     <div class="character-card">
                         <img style="border-radius: 10px; width: 100%; height: auto; border: 2px solid ${categories_color[filter.innerText]}; box-shadow: 0 0 15px ${categories_color[filter.innerText]}, 0 0 30px white;" src="assets/${i}.jpeg"></img>
                         <div class="container">
-                            <h4 style="font-size:20px"><b>${characterFromList.characterName}</b></h4>
+                            <h4 style="font-size:20px; padding-top:10px;"><b>${characterFromList.characterName}</b></h4>
                             <p style="font-style:italic">${characterFromList.characterDescription}</p>
                         </div>
                     </div>

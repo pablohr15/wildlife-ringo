@@ -27,15 +27,6 @@ body {
 }
 
 
-.headname{
-    font-size: 60px!important;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif!important;
-    color: rgb(255, 146, 250)!important;
-    text-shadow: 0 0 30px white!important;
-    font-weight: bold;
-    opacity: 100%;
-}
-
 .character-card{
     background-color: wheat;
     border-radius: 10px;
